@@ -1,4 +1,4 @@
-## [ Angular2 Updated to 2.4.1 ]
+
 # Angular2 people
 
 
