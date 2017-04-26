@@ -1,0 +1,70 @@
+{
+  "name": "angular2-express-mongo",
+  "version": "1.0.0",
+  "description": "Angular2, Mongo, Gulp, Typescript and Express",
+  "scripts": {
+    "clean": "gulp clean",
+    "compile": "gulp compile",
+    "build": "gulp build",
+    "deploy": "concurrently --kill-others \"gulp watch\" \"node ./dist/server/bin/www\"",
+    "postinstall": "gulp installTypings"
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billreed63/Angular2-expressjs-mongoose-gulp-node-typescript.git"
+  },
+  "keywords": [
+    "Angular2",
+    "Express",
+    "Quick Start",
+    "Gulp",
+    "Typescript"
+  ],
+  "author": "Bill Reed",
+  "license": "MIT",
+  "dependencies": {
+	  "@angular/common": "~2.4.9",
+    "@angular/compiler": "~2.4.9",
+    "@angular/core": "~2.4.9",
+    "@angular/forms": "~2.4.9",
+    "@angular/http": "~2.4.9",
+    "@angular/platform-browser": "~2.4.9",
+    "@angular/platform-browser-dynamic": "~2.4.9",
+    "@angular/router": "~3.4.9",
+    "@angular/upgrade": "~2.4.9",
+
+    "body-parser": "1.17.1",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.8.6",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "5.2.0",
+    "systemjs": "0.20.9",
+    "zone.js": "^0.7.7"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-tslint": "^7.1.0",
+    "gulp-typescript": "^3.0.1",
+    "gulp-typings": "^2.0.4",
+    "method-override": "^2.3.6",
+    "run-sequence": "^1.2.2",
+    "ts-node": "2.1.0",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+
+
+  },
+  "bugs": {
+    "url": "https://github.com/billreed63/Angular2-expressjs-mongoose-gulp-node-typescript/issues"
+  },
+  "homepage": "https://github.com/billreed63/Angular2-expressjs-mongoose-gulp-node-typescript#readme"
+}

@@ -1,0 +1,40 @@
+<h1>{{title}}</h1>
+<h2>People</h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="error" *ngIf="error">{{error}}</div>
+        <div class="pull-right">
+            <button class="btn btn-success" (click)="addPerson()">Add New Person</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th hidden>Object Id</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let person of people" [class.active]="person === selectedPerson" (click)="onSelect(person)">
+                    <td hidden>{{person._id}}</td>
+                    <td class="personFullName" >{{person.firstName}} {{person.lastName}}</td>
+                    <td><button class="btn btn-danger" (click)="deletePerson(person, $event)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div *ngIf="selectedPerson">
+            <h2>
+                {{selectedPerson.firstName | uppercase}} {{selectedPerson.lastName | uppercase}}
+            </h2>
+            <button class="btn btn-primary" (click)="gotoDetail()">View Details</button>
+        </div>
+    </div>
+</div>

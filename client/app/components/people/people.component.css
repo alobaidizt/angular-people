@@ -1,0 +1,6 @@
+
+
+td.personFullName:hover {
+    cursor: pointer;
+    background-color: lightGray;
+}
