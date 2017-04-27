@@ -21,8 +21,8 @@
             <tbody>
                 <tr *ngFor="let person of people" [class.active]="person === selectedPerson" (click)="onSelect(person)">
                     <td hidden>{{person._id}}</td>
-                    <td class="personFullName" >{{person.firstName}} {{person.lastName}}</td>
-                    <td><button class="btn btn-danger" (click)="deletePerson(person, $event)">Delete</button></td>
+                    <td id="{{person.firstName}}_{{person.lastName}}" class="personFullName" >{{person.firstName}} {{person.lastName}}</td>
+                    <td><button id="delete_{{person.firstName}}_{{person.lastName}}" class="btn btn-danger" (click)="deletePerson(person, $event)">Delete</button></td>
                 </tr>
             </tbody>
         </table>

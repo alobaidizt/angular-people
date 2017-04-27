@@ -1,0 +1,47 @@
+{
+  "name": "people",
+  "main": "dist/server/bin/www",
+  "description": "People app on the Bluemix platform",
+  "version": "0.1.1",
+  "private": false,
+  "engines": {
+    "node": "4.*"
+  },
+  "scripts": {
+    "start": "node ./dist/server/bin/www"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billreed63/angular-people"
+  },
+  "dependencies": {
+
+    "cfenv": "^1.0.x",
+    "cloudant": "^1.7.1",
+    "dotenv": "^4.0.0",
+
+
+    "@angular/common": "~2.4.9",
+  "@angular/compiler": "~2.4.9",
+  "@angular/core": "~2.4.9",
+  "@angular/forms": "~2.4.9",
+  "@angular/http": "~2.4.9",
+  "@angular/platform-browser": "~2.4.9",
+  "@angular/platform-browser-dynamic": "~2.4.9",
+  "@angular/router": "~3.4.9",
+  "@angular/upgrade": "~2.4.9",
+
+  "body-parser": "1.17.1",
+  "bootstrap": "^3.3.7",
+  "core-js": "^2.4.1",
+  "express": "^4.15.2",
+  "mongoose": "^4.8.6",
+  "reflect-metadata": "^0.1.10",
+  "rxjs": "5.2.0",
+  "systemjs": "0.20.9",
+  "zone.js": "^0.7.7"
+  },
+  "author": "Bill Reed",
+  "license": "Apache-2.0"
+}

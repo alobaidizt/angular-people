@@ -36,7 +36,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">Last Name: </label>
         <div class="col-sm-10">
-            <input id="lastname" class="form-control" [(ngModel)]="person.lastName" placeholder="last name" name="lastname"
+            <input id="lastname" class="form-control" [(ngModel)]="person.lastName" placeholder="Last name" name="lastname"
             required minlength="4" maxlength="24" #lastname="ngModel" />
             <div *ngIf="lastname.errors && (lastname.dirty || lastname.touched)"
                   class="alert alert-danger">
@@ -70,8 +70,7 @@
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button (click)="goBack()" class="btn btn-default">Back</button>
-            <!--<button (click)="save()" class="btn btn-primary" >Save</button>-->
-            <button type="submit" class="btn btn-primary"
+            <button id="personsubmit" type="submit" class="btn btn-primary"
              [disabled]="!personForm.form.valid">Save</button>
         </div>
     </div>

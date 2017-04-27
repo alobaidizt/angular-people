@@ -1,5 +1,5 @@
 {
-  "name": "angular2-express-mongo",
+  "name": "angular2-people",
   "version": "1.0.0",
   "description": "Angular2, Mongo, Gulp, Typescript and Express",
   "scripts": {
@@ -7,13 +7,18 @@
     "compile": "gulp compile",
     "build": "gulp build",
     "deploy": "concurrently --kill-others \"gulp watch\" \"node ./dist/server/bin/www\"",
-    "postinstall": "gulp installTypings"
+    "postinstall": "gulp installTypings",
 
+
+    "update-webdriver": "webdriver-manager update",
+
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor e2e-tests/protractor.conf.js"
 
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/billreed63/Angular2-expressjs-mongoose-gulp-node-typescript.git"
+    "url": "git+https://github.com/billreed63/angular-people.git"
   },
   "keywords": [
     "Angular2",
@@ -44,6 +49,7 @@
     "rxjs": "5.2.0",
     "systemjs": "0.20.9",
     "zone.js": "^0.7.7"
+
   },
   "devDependencies": {
     "concurrently": "^3.4.0",
@@ -64,7 +70,7 @@
 
   },
   "bugs": {
-    "url": "https://github.com/billreed63/Angular2-expressjs-mongoose-gulp-node-typescript/issues"
+    "url": "https://github.com/billreed63/angular-people/issues"
   },
-  "homepage": "https://github.com/billreed63/Angular2-expressjs-mongoose-gulp-node-typescript#readme"
+  "homepage": "https://github.com/billreed63/angular-people#readme"
 }
